@@ -1,0 +1,16 @@
+% Generado por entrenar_v2.py - copie/pegue en main.tex
+% --- Tabla de tamaños y operadores
+Acelerómetro & FP32 & 6\,856 & \texttt{FULLY\_CONNECTED} \\
+Acelerómetro & INT8 & 4\,912 & \texttt{FULLY\_CONNECTED} \\
+Acelerómetro + giróscopo & FP32 & 9\,160 & \texttt{FULLY\_CONNECTED} \\
+Acelerómetro + giróscopo & INT8 & 5\,488 & \texttt{FULLY\_CONNECTED} \\
+% --- Acuerdo FP32-INT8 (variante, acuerdo medio, delta acc, delta F1)
+Acelerómetro & 95.4\,\% & +0.027 & +0.039 \\
+Acelerómetro + giróscopo & 99.5\,\% & +0.005 & +0.007 \\
+% --- Variantes (características, acc FP32, F1 FP32, acc INT8, F1 INT8)
+Acelerómetro & 18 & 0.551 & 0.475 & 0.578 & 0.514 \\
+Acelerómetro + giróscopo & 36 & 0.760 & 0.730 & 0.765 & 0.737 \\
+Acelerómetro (invariante) & 14 & 0.793 & 0.755 & 0.792 & 0.755 \\
+Acel. + giróscopo (invariante) & 28 & 0.807 & 0.758 & 0.806 & 0.757 \\
+% --- Pérdida final del modelo con giróscopo (tabla de hiperparámetros)
+% Pérdida final de entrenamiento: 0.0015
